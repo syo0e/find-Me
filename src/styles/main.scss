@@ -41,4 +41,12 @@ body {
   .signup-info-container {
     flex: 1 1 auto;
   }
+
+  input {
+    border: none;
+    width: 20em;
+    height: 2em;
+    margin-bottom: 2em;
+    align-items: center;
+  }
 }

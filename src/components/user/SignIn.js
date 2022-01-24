@@ -6,10 +6,12 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
 
   const onChangeEmail = e => {
+    e.preventDefault();
     setEmail(e.target.value);
   };
 
   const onChangePassword = e => {
+    e.preventDefault();
     setPassword(e.target.value);
   };
 
