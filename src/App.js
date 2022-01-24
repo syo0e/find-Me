@@ -1,5 +1,7 @@
+import List from './components/answer/List';
+
 function App() {
-  return <div className="App"></div>;
+  return <List />;
 }
 
 export default App;
