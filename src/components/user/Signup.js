@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/main.scss';
+import { withRouter } from 'react-router-dom';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -43,4 +44,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default withRouter(signup);
