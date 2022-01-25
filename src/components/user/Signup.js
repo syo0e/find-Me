@@ -44,4 +44,4 @@ const Signup = () => {
   );
 };
 
-export default withRouter(signup);
+export default withRouter(Signup);
