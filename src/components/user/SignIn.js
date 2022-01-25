@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/main.scss';
+import logo from '../../image/logo.png';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -16,14 +17,14 @@ const SignIn = () => {
   };
 
   const onClick = () => {
-    setEmail('');
+    setEmail({ email });
     setPassword('');
   };
 
   return (
     <div className="container">
       <div className="logo-container">
-        <div className="logo">Logo Image</div>
+        <img src={logo} alt="logo" width="375px" height="330px"></img>
       </div>
       <div className="signin-container">
         <div className="email-container">
