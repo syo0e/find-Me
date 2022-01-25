@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../styles/main.scss';
 import logo from '../../image/logo.png';
 
-const SignIn = () => {
+const Signin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -65,4 +65,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Signin;
