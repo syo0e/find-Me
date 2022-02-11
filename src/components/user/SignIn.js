@@ -69,7 +69,7 @@ const Signin = ({ handleSigninSuccess }) => {
       </form>
       <div className="social-container">
         <span className="social-icon">소셜 아이콘</span>
-        <span className="move-social">소셜페이지로</span>
+        <Link to="/">소셜페이지</Link>
       </div>
 
       <div className="signup-info-container">
