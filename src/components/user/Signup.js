@@ -92,10 +92,10 @@ const Signup = ({ history }) => {
         </form>
       </div>
       <div className="signup-btn">
-        <button onClick={handleSignup}>Signup</button>
         {errorMessage === '' ? null : (
           <div className="message-box">{errorMessage}</div>
         )}
+        <button onClick={handleSignup}>Signup</button>
       </div>
     </div>
   );
