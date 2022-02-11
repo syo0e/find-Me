@@ -64,7 +64,7 @@ const Mypage = ({ handleDelete }) => {
             <input
               type="current-password"
               onChange={onChangeInput}
-              name="password"
+              name="current-password"
               value={password}
               required
             />
@@ -75,7 +75,7 @@ const Mypage = ({ handleDelete }) => {
               type="new-password"
               placeholder="Enter a password to change"
               onchange={onChangeInput}
-              name="changePassword"
+              name="new-password"
               value={changePassWord}
             />
           </div>
@@ -83,12 +83,16 @@ const Mypage = ({ handleDelete }) => {
             className="button-change-password"
             type="submit"
             onClick={rePassword}
-          ></button>
+          >
+            비밀번호 변경
+          </button>
           <button
             className="button-delete"
             type="submit"
             onClick={handleDelete}
-          ></button>
+          >
+            회원탈퇴
+          </button>
           {errorMessage === '' ? null : (
             <div className="message-info">{errorMessage}</div>
           )}

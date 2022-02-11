@@ -4,7 +4,7 @@ import '../../styles/main.scss';
 import logo from '../../image/logo.png';
 import axios from 'axios';
 
-const Signin = () => {
+const Signin = ({ handleSigninSuccess }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -30,9 +30,9 @@ const Signin = () => {
             email: email,
             password: password,
           },
-          { 'Content=Type': 'application/json', withCredentials: true },
+          { 'Content=Type': 'application/json' },
         )
-        .then(() => console.log('success'));
+        .then(() => handleSigninSuccess);
     }
   };
 
