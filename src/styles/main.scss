@@ -27,4 +27,39 @@ img {
     margin: 2em 3em;
     align-items: center;
   }
+
+  .modal {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    button {
+      display: inline-block;
+      width: 50px;
+      margin-left: calc(100% - 100px - 10px);
+    }
+    .modal_content {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px 10px;
+      background: #fff;
+      border: 2px solid #666;
+      text-align: center;
+    }
+
+    .modal_layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+  }
 }

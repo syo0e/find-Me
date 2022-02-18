@@ -1,6 +1,7 @@
 import { Switch, Route, withRouter } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
+import TestModal from './components/test/TestModal';
 
 import Add from './components/answer/Add';
 import Edit from './components/answer/Edit';
@@ -49,6 +50,7 @@ function App({ history }) {
           <Signin handleSigninSuccess={handleSigninSuccess} />
         </Route>
         <Route exact path="/signup" component={Signup} />
+        <Route exact paht="test/modal" component={TestModal} />
         <Route exact path="/users">
           <Mypage handleDelete={handleDelete}></Mypage>
         </Route>
